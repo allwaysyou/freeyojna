@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>2025 Free Laptop Scheme</title>
   <style>
     body {
@@ -21,96 +21,157 @@
     }
     .gov-header {
       text-align: center;
-      margin-bottom: 9px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid #e2b840;
+      background: linear-gradient(90deg, #f0ebe1 0%, #fff7d1 100%);
+      border-radius: 18px 18px 0 0;
+      box-shadow: inset 0 -3px 8px #cbbf6e88;
     }
     .gov-seal {
-      width: 41px;
-      margin-bottom: 6px;
+      width: 55px;
+      margin-bottom: 10px;
+      filter: drop-shadow(0 0 3px rgba(226,184,64,0.7));
+      animation: subtleBounce 1.8s ease-in-out infinite alternate;
+    }
+    @keyframes subtleBounce {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(6px); }
+    }
+    .gov-title {
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      font-size: 1.25rem;
+      color: #3a3f61;
+      margin: 0;
+      text-shadow: 0 1px 1px #beae57;
+    }
+    .gov-ministry {
+      font-weight: 400;
+      font-size: 1.05rem;
+      color: #a18d0b;
+      margin: 6px 0 0 0;
+      letter-spacing: 0.09em;
+      font-style: italic;
+      text-shadow: 0 1px 1px #d7c45d;
     }
     .main-title {
       text-align: center;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 1.48rem;
-      margin: 6px 0 15px 0;
+      margin: 24px 0 20px 0;
       color: #1b2d4b;
+      text-shadow: 0 2px 12px #e2b84099;
+      letter-spacing: 0.04em;
     }
     .student-img {
       display: block;
       margin: 0 auto 16px auto;
       border-radius: 12px;
+      max-width: 320px;
       width: 95%;
-      max-width: 300px;
-      box-shadow: 0 4px 12px rgba(44,71,146,0.09);
+      box-shadow: 0 6px 20px rgba(34,85,149,0.22);
+      transition: transform 0.35s ease;
+    }
+    .student-img:hover {
+      transform: scale(1.04);
     }
     .action-btn {
       display: block;
-      background: #2768ce;
-      color: #fff;
-      font-weight: bold;
+      background: #e2b840;
+      color: #102143;
+      font-weight: 700;
       text-align: center;
       border: none;
-      padding: 12px 0;
-      margin: 4px auto 18px auto;
-      font-size: 1rem;
-      border-radius: 6px;
+      padding: 14px 0;
+      margin: 4px auto 24px auto;
+      font-size: 1.1rem;
+      border-radius: 8px;
       width: 90%;
       cursor: pointer;
-      box-shadow: 0 2px 6px rgba(44,71,146,0.14);
-      transition: background 0.3s;
+      box-shadow: 0 4px 16px rgba(226,184,64,0.44);
+      transition: background 0.3s, box-shadow 0.3s;
       text-decoration: none;
+      letter-spacing: 0.05em;
     }
     .action-btn:hover {
-      background: #193c77;
+      background: #c9a72c;
+      box-shadow: 0 6px 22px rgba(201,167,44,0.62);
     }
     .eligibility {
       font-size: 1.05rem;
-      margin: 5px 0 12px 0;
+      margin: 5px 0 14px 0;
       color: #222;
-      padding: 2px 7px;
+      padding: 2px 8px;
+      letter-spacing: 0.02em;
     }
     .eligibility ul {
       margin: 7px 0 5px 0;
-      padding: 0 0 0 19px;
+      padding: 0 0 0 20px;
     }
     .eligibility li {
-      margin-bottom: 6px;
-      line-height: 1.5;
+      margin-bottom: 8px;
+      line-height: 1.6;
       font-size: 1rem;
     }
     .adsterra-block {
       background: #f6f8fb;
-      border-radius: 8px;
-      margin: 18px auto 7px auto;
-      padding: 10px 7px;
+      border-radius: 10px;
+      margin: 24px auto 14px auto;
+      padding: 12px 12px;
       box-sizing: border-box;
-      box-shadow: 0 2px 8px rgba(44,71,146,0.07);
+      box-shadow: 0 4px 14px rgba(44,71,146,0.08);
       text-align: center;
       width: 95%;
-      min-height: 88px;
+      min-height: 92px;
+      transition: box-shadow 0.35s ease;
+    }
+    .adsterra-block:hover {
+      box-shadow: 0 6px 20px rgba(44,71,146,0.15);
     }
     .footer {
       text-align: center;
       font-size: 12px;
       color: #888;
-      margin-top: 20px;
-      padding: 7px;
+      margin-top: 24px;
+      padding: 10px 7px;
+      user-select: none;
+      letter-spacing: 0.02em;
     }
-    @media (max-width:600px) {
-      .container { max-width: 97vw; padding: 10px 6px 8px 6px; }
-      .main-title { font-size: 1.07rem; }
-      .eligibility { font-size: .93rem;}
+    @media (max-width: 600px) {
+      .container {
+        max-width: 97vw;
+        padding: 12px 10px 16px 10px;
+      }
+      .main-title {
+        font-size: 1.15rem;
+      }
+      .eligibility {
+        font-size: 0.95rem;
+      }
+      .action-btn {
+        font-size: 1rem;
+        padding: 12px 0;
+      }
+      .gov-ministry {
+        font-size: 0.9rem;
+        letter-spacing: 0.07em;
+      }
+      .gov-title {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="gov-header">
-      <img src="images/images%20(1).png" alt="Emblem" class="gov-seal"/>
-      <div style="font-weight:500; letter-spacing:.04em; font-size:1.05rem;">GOVERNMENT OF INDIA<br>
-      <span style="font-weight:300;">MINISTRY OF EDUCATION</span></div>
+      <img src="images/images%20(1).png" alt="Emblem" class="gov-seal" />
+      <div class="gov-title">GOVERNMENT OF INDIA</div>
+      <div class="gov-ministry">MINISTRY OF EDUCATION</div>
     </div>
     <div class="main-title">2025 FREE LAPTOP SCHEME</div>
-    <img src="images/generated-image.png" alt="Students with Laptop" class="student-img"/>
+    <img src="images/generated-image.png" alt="Students with Laptop" class="student-img" />
     <a class="action-btn" href="https://upcmo.up.nic.in" target="_blank">CHECK ELIGIBILITY & APPLY NOW</a>
     <div class="eligibility">
       <strong>Eligibility:</strong>
@@ -125,24 +186,26 @@
       <!-- Adsterra Ad Zone Start -->
       <script type="text/javascript">
         atOptions = {
-          'key' : 'XXXXXX', // अपनी Adsterra key यहाँ डालें
-          'format' : 'iframe',
-          'height' : 90,
-          'width' : 320,
-          'params' : {}
+          'key': 'XXXXXX', // अपनी Adsterra key यहाँ डालें
+          'format': 'iframe',
+          'height': 90,
+          'width': 320,
+          'params': {},
         };
-        document.write('<scr' + 'ipt type="text/javascript" src="http' 
-            + (location.protocol === 'https:' ? 's' : '') 
-            + '://www.effectivecreativeformat.com/XXXXXX/invoke.js"></scr' + 'ipt>');
+        document.write(
+          '<scr' +
+            'ipt type="text/javascript" src="http' +
+            (location.protocol === 'https:' ? 's' : '') +
+            '://www.effectivecreativeformat.com/XXXXXX/invoke.js"></scr' +
+            'ipt>'
+        );
       </script>
       <!-- Adsterra Ad Zone End -->
     </div>
     <div class="footer">
-      Terms & Conditions | Privacy Policy | Contact Us<br>
+      Terms & Conditions | Privacy Policy | Contact Us<br />
       © 2024 All of Resgrted
     </div>
   </div>
 </body>
 </html>
-
-
